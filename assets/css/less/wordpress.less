@@ -1,0 +1,292 @@
+//This is a list of overrides for Wordpress
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,500,400italic);
+
+@font-stack:    'Ubuntu', Verdana, sans-serif;
+@brandcolor:  #00af64;
+@bluebrand:   #0b62a4;
+@brandcolor2: #4586A6;
+@brandcolor3: #3D5A60;
+@brandcolor4: #E1E6EC;
+
+*, body, h1, h2, h3, h4, h5, h6, p {
+	font-family: @font-stack;
+}
+
+//Submit button (quickfix)
+
+#submit {
+  .btn;
+  .btn-primary;
+}
+
+
+// Making Wordpress Forms Awesome by default (This is a quickfix)
+select,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]
+ {
+  .form-control;
+}
+
+textarea {
+  .form-control;
+  height:auto;
+}
+
+//doing the same to buddypress buttons
+
+#buddypress button,
+#buddypress a.button, 
+#buddypress input[type="submit"], 
+#buddypress input[type="button"], 
+#buddypress input[type="reset"], 
+#buddypress ul.button-nav li a, 
+#buddypress div.generic-button a, 
+#buddypress .comment-reply-link,
+ a.bp-title-button,
+ .button
+  {
+    
+    .btn;
+    .btn-primary;
+    font-size: 1em;
+  }
+
+.contentwrapper {
+	min-height: 500px;
+}
+
+.logo {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+
+
+.ospkwidgets {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+  .textwidget {
+    margin-top: 2px;
+  }
+
+  .circular {
+    width: 7em;
+    height: 7em;
+    border-radius: 7em;
+    margin: 20px auto;
+    background: darken(@brandcolor4, 10%);
+    text-align: center;
+    line-height: 8em;
+    float:left;
+    cursor: default;
+  }
+
+  .widgetleft {
+    
+    margin: 1em 0em 0em 8em;
+
+
+      h2 {
+        font-size: 1.5em;
+        padding:0px;
+        margin: 0px;
+      }
+
+      p {
+        padding:0px;
+        margin-top: 5px;
+      }
+
+  }
+
+  .widgetright {
+
+    margin: 1em 0em 0em 8em;
+
+    
+
+      h2 {
+        font-size: 1.5em;
+        padding:0px;
+        margin: 0px;
+      }
+
+      p {
+        padding:0px;
+        margin-top: 5px;
+      }
+
+  }
+
+}
+
+div.circular:hover {
+        background-color: @brandcolor2;
+        transition-duration:1s;
+        color: white;
+}
+
+footer {
+  background-color: darken(@bluebrand, 20%)!important;
+}
+
+nav.navbar {
+  ul#main-menu {
+
+    li {
+      a {
+        color:@brandcolor;
+        font-weight: 400;
+        font-weight: bold;
+      }
+      :hover {
+        color:darken(@brandcolor, 10%);
+      }
+      :focus {
+        color:darken(@brandcolor, 10%);
+      }
+    }
+
+    .current-menu-item {
+      a {
+      color:@bluebrand;
+      }
+    }
+  }
+}
+
+.modality {
+
+  .modal-content {
+    background-color: #fdf6af;
+    color: #222;
+  }
+
+  .modal-header {
+    border-bottom: 0px rgba(0,0,0,0);
+  }
+
+  .modal-body {
+    padding: 0px;
+    background-color: blue;
+  }
+
+}
+
+/* STRAPPED THEME STARTS HERE */
+.btn {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+}
+
+.navbar ul.nav li button {
+  margin: 0.7em 0 0 1em;
+}
+.jumbotron {
+  background: url(../img/noisy_net.png);
+  color: #fff;
+  padding: 1.5em 0 1em;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
+}
+.jumbotron h2 {
+  font-size: 1.0em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.4em;
+  margin-bottom: 1.4em;
+}
+
+.jumbotron .btn {
+  box-shadow: 1px 1px 3px #000;
+  padding: 0.2em 1.5em 0.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.jumbotron .btn-lg {
+  box-shadow: 1px 1px 3px #000;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5em 2.5em 0.5em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sect-border {
+  border-top: 1px dashed #d6d6d6;
+  border-bottom: 1px dashed #f6f6f6;
+  margin: 2em 8% 2.4em;
+}
+.subhead {
+  color: #000;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.3em 0;
+}
+
+#slideshow {
+  margin: 0.5em 0 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+#slideshow .carousel-inner img {
+  background: #000;
+  height: 300px;
+  width: 100%;
+}
+
+.carousel-control {
+	vertical-align: middle;
+	padding-top: 250px;
+}
+footer {
+  background: #111;
+  color: #fff;
+  margin: 3.5em 0 0;
+  padding: 1.5em 0 0.8em;
+}
+@media screen and (max-width: 768px) {
+  .navbar ul.nav li {
+    text-align: center;
+  }
+  .navbar ul.nav li button {
+    margin: 1em 0;
+  }
+  .jumbotron {
+    font-size: 14px;
+    padding: 1em 0 0.8em;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  .jumbotron {
+    font-size: 12px;
+  }
+  footer .pull-right {
+    display: none;
+  }
+}
+/* Strapped theme ends here */

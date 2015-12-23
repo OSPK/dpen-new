@@ -1,0 +1,18 @@
+img#wpstats{
+  display: none;
+}
+
+#buddypress .standard-form #basic-details-section input[type="password"] {
+	width:90%;
+}
+#buddypress #whats-new-options {
+	overflow: visible;
+	margin: 20px;
+}
+#buddypress div.item-list-tabs {
+    margin-top: 40px;
+}
+
+div#whats-new-textarea textarea {
+	height:50px;
+}
