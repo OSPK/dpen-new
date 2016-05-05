@@ -1,0 +1,2 @@
+fail2ban-client set wordpress unbanip xx.xx.xx.x
+
